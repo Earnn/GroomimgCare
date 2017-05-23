@@ -63,8 +63,8 @@ class UploadProfile(ModelForm):
 			
         ]
        	widgets = {
-            'address': TextInput(attrs={'placeholder': 'Address',}),
-            'username': TextInput(attrs={'placeholder': 'Name'}),
+            'address': TextInput(attrs={'id':'a'}),
+            'username': TextInput(attrs={'id':'u'}),
             
 
         }

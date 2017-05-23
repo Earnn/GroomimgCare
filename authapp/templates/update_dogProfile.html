@@ -119,27 +119,18 @@ label {
 #nameNav{
     float: right;
     font-size: 18px;
-    margin-top: 28px; 
+    /*margin-top: 28px; */
     font-weight: 600;
     font-family: 'Roboto Condensed', sans-serif;"
 }
 </style>
+
 <!-- banner -->
 <div class="header">
- 
-
     <div class="container">
-
         <br>
-      <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{ current_user.username }}  <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
-
-     
-                        <!-- <div class="clearfix"> </div> -->
-                           <!--  </li>
-                            <li></li> -->
         <div class="header-right">
             <div class="top-nav">
-                
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -151,20 +142,18 @@ label {
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                        <img src="{% static 'images/logo2.png' %}" width="13%" height="13%" style="margin-top: -40px;float: left;">
+                            <img src="{% static 'images/logo2.png' %}" width="13%" height="13%" style="margin-top: -40px;float: left;">
                             <li><a class="active" href="/service">Home</a></li>
                             <li><a href="/booking">Booking</a></li>
                             <li><a href="/profile">Profile</a></li>
                             <li><a href="/comment">Comment</a></li>
                             <li><a href="/contact">Contact</a></li>
-                           
+                            <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
                         </ul>
-
                     </div>
                 </nav>
             </div>
             <div class="header-right">
-              
             </div>
         </div>
     </div>

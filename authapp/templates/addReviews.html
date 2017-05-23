@@ -232,7 +232,7 @@ h2 {
 #nameNav{
     float: right;
     font-size: 18px;
-    margin-top: 28px; 
+
     font-weight: 600;
     font-family: 'Roboto Condensed', sans-serif;"
 }
@@ -250,8 +250,6 @@ h2 {
     <div class="container">
 
         <br>
-     <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{ current_user.username }}  <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
-     
                         <!-- <div class="clearfix"> </div> -->
                            <!--  </li>
                             <li></li> -->
@@ -275,7 +273,9 @@ h2 {
                             <li><a href="/profile">Profile</a></li>
                             <li><a href="/comment">Comment</a></li>
                             <li><a href="/contact">Contact</a></li>
-                           
+                                <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{ current_user.username }}  <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
+     
+
                         </ul>
 
                     </div>

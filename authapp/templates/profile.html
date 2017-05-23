@@ -285,7 +285,7 @@ th {
 #nameNav{
     float: right;
     font-size: 18px;
-    margin-top: 28px; 
+
     font-weight: 600;
     font-family: 'Roboto Condensed', sans-serif;"
 }
@@ -296,13 +296,9 @@ th {
 
     <div class="container">
 
-        <br>
-      <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{ user.username }}  <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
-
+      
      
-                        <!-- <div class="clearfix"> </div> -->
-                           <!--  </li>
-                            <li></li> -->
+
         <div class="header-right">
             <div class="top-nav">
                 
@@ -323,11 +319,12 @@ th {
                             <li><a href="/profile">Profile</a></li>
                             <li><a href="/comment">Comment</a></li>
                             <li><a href="/contact">Contact</a></li>
-                           
+                            <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{user.username }} <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
                         </ul>
 
                     </div>
                 </nav>
+
             </div>
             <div class="header-right">
               
@@ -349,7 +346,7 @@ th {
             <div class="col-md-3"></div>
             <div class="col-md-3">
                 <div class="crop">
-                    <img src="{% static 'images/Logo.png' %}" id="imgreviews" alt="" width="100%" height="100%" />
+                    <img src="{% static 'images/logo2.png' %}" id="imgreviews" alt="" width="100%" height="100%" />
                 </div>
             </div>
             <div class="col-md-6" id="textalignLeft">
@@ -393,7 +390,7 @@ th {
                     <div class="row">
                         <div class="col-md-3">
                             <div class="crop">
-                                <img src="{{dl.picDog.url}}" id="imgreviews" alt="" width="100%" height="100%" />
+                                <img src="{{dl.picDog.url}}" id="" alt="" width="100%" height="100%" />
                             </div>
                         </div>
                         <br>
@@ -434,27 +431,6 @@ jQuery(document).ready(function($) {
         });
     });
 
-
-
-
-      // <table class="table ">
-      //               <thead>
-      //                   <tr>
-                            // <th class="text-center">ID</th>
-                            // <th class="text-center">Date</th>
-                            // <th class="text-center">Dogs</th>
-                            // <th class="text-center">Cost</th>
-                            // <th class="text-center">Action</th>
-      //                   </tr>
-      //               </thead>
-      //               <tr>
-      //                   <td>1</td>
-      //                   <td>News</td>
-      //                   <td>News Cate</td>
-      //                   <td>News Cate</td>
-      //                   <td class="text-center"><a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
-      //               </tr>
-      //           </table>
 
     var mytable = '<table class="table ">';
     mytable += ' <thead><tr><th class="text-center">ID</th><th class="text-center">Date</th><th class="text-center">Time</th><th class="text-center">Dogs</th><th class="text-center">Cost</th><th class="text-center">Action</th> </tr> </thead> <tbody><tr>';

@@ -1,3 +1,4 @@
+
  {% extends "base.html" %} {% block content %}{% load static %}
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
@@ -41,15 +42,11 @@ button {
     -moz-transition: .5s all;
     -o-transition: .5s all;
     -ms-transition: .5s all;
-
 }
-
 .w3-agile-news-img a img {
     width: 100%;
     /*margin:0 0 1em 0;*/
 }
-
-
 .submit-w3l  input[type="submit"] {
     background:#fff;
     color:#fff;
@@ -74,12 +71,10 @@ textarea {
     border-radius: 25px;
     font-family: 'Quicksand', sans-serif;
 }
-
 input[type="text"] {
     /*background: url("../images/user.png") no-repeat 20px 12px;*/
     background-size: 24px;
 }
-
 .submit-w3l  input[type="submit"] {
     background:#fff;
     color:#fff;
@@ -94,18 +89,15 @@ select {
     height: 33px;
     font-family: 'Quicksand', sans-serif;
 }
-
 #textInput {
     width: 200px;
 }
-
 .fh{
      /*background: url(../../static/images/2.jpg) no-repeat;*/
       background-color: white;
     background-attachment: fixed;
     background-size: 100%;
 }
-
 .banner {
    /*background: url(../../static/images/2.jpg) no-repeat;*/
       background-color: white;
@@ -114,6 +106,12 @@ select {
     color: #FFF;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+}
+#a{
+    color:white;
+}
+#u{
+color:white;
 }
 /**/
 </style>
@@ -139,10 +137,10 @@ select {
                             <form method="post" enctype="multipart/form-data">
                                 {% csrf_token %}
                                 <!-- <div id="textInput" style="white-space:nowrap;"> -->
-                                <label>Name: </label> {{ person.username }}
+                                <label style="color:white; margin-bottom: 10px">Name: </label> {{ person.username }} 
                                 <!-- </div> -->
-                                <!-- <div id="textInput" style="white-space:nowrap;margin-bottom: 15px"> -->
-                                <label>Address: </label>
+                                <!-- <div id="textInput" style="white-space:nowrap;margin-bottom: 15px"> --> <br> 
+                                <label style="color:white; margin-bottom: 10px">Address: </label>
                                 <br> {{ person.address }}
                                 <!-- </div> -->
                                 <!-- <div  style="white-space:nowrap;"> -->
@@ -169,17 +167,16 @@ select {
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
-
         reader.onload = function(e) {
             $('#blah').attr('src', e.target.result);
         }
-
         reader.readAsDataURL(input.files[0]);
     }
 }
-
 $("#imgInp").change(function() {
     readURL(this);
 });
 </script>
 {% endblock script %}
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

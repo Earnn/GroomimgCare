@@ -380,7 +380,7 @@ button {
 #nameNav{
     float: right;
     font-size: 18px;
-    margin-top: 28px; 
+    /*margin-top: 28px; */
     font-weight: 600;
     font-family: 'Roboto Condensed', sans-serif;"
 }
@@ -396,7 +396,7 @@ button {
     <div class="container">
 
         <br>
-      <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{ current_user.username }}  <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
+     
 
      
                         <!-- <div class="clearfix"> </div> -->
@@ -422,7 +422,7 @@ button {
                             <li><a href="/profile">Profile</a></li>
                             <li><a href="/comment">Comment</a></li>
                             <li><a href="/contact">Contact</a></li>
-                           
+                            <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{ current_user.username }}  <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
                         </ul>
 
                     </div>

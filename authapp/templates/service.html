@@ -368,9 +368,9 @@ h2 {
 }
 
 #idComment {
-    color: #f54950;
-    font-size: 20px;
-    font-weight: bold;
+ 
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
 }
 
 
@@ -528,32 +528,25 @@ hr.style-two {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
 }
 
-h3{
+
+#nameNav {
     float: right;
     font-size: 18px;
-    margin-top: 28px; 
+    /*margin-top: 28px; */
     font-weight: 600;
-    font-family: 'Roboto Condensed', sans-serif;"
+    font-family: 'Roboto Condensed', sans-serif;
+    "
+
 }
 </style>
 {% load static %}
-
+<link href="https://fonts.googleapis.com/css?family=Prompt:300,400" rel="stylesheet">
 <!-- banner -->
 <div class="header">
- 
-
     <div class="container">
-
         <br>
-      <h3 ><i class="fa fa-user" aria-hidden="true"></i> {{ current_user.username }}  <a  href="/logout/">Logout</a></h3>
-
-     
-                        <!-- <div class="clearfix"> </div> -->
-                           <!--  </li>
-                            <li></li> -->
         <div class="header-right">
             <div class="top-nav">
-                
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -565,20 +558,18 @@ h3{
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                        <img src="{% static 'images/logo2.png' %}" width="13%" height="13%" style="margin-top: -40px;float: left;">
+                            <img src="{% static 'images/logo2.png' %}" width="13%" height="13%" style="margin-top: -40px;float: left;">
                             <li><a class="active" href="/service">Home</a></li>
                             <li><a href="/booking">Booking</a></li>
                             <li><a href="/profile">Profile</a></li>
                             <li><a href="/comment">Comment</a></li>
                             <li><a href="/contact">Contact</a></li>
-                           
+                            <p id="nameNav"><i class="fa fa-user" aria-hidden="true"></i> {{ current_user.username }} <a style="color: #3276B1;font-weight: bold;" href="/logout/">Logout</a></p>
                         </ul>
-
                     </div>
                 </nav>
             </div>
             <div class="header-right">
-              
             </div>
         </div>
     </div>
@@ -787,11 +778,11 @@ h3{
             <div class="col-md-12">
                 <div class="row" style="border-color: black">
                     <div class="col-md-3">
-                        <img src="{{review.picDR.url}}" id="imgreviews" style="height: 50%" width="70%" height="70%">
+                        <img src="{{review.picDR.url}}" id="" style="height: 50%" width="100%" height="100%">
                     </div>
                     <br>
                     <div class="col-md-8" id="textalignLeft">
-                        <h3 id="idName">{{ review.user_name }} <em style="font-style: italic;font-size: 15px;color: #bbb">{{ review.pub_date }}</em></h3>
+                        <h3 id="idName" >{{ review.user_name }} <em style="font-style: italic;font-size: 15px;color: #bbb">{{ review.pub_date }}</em></h3>
                         <h3 style="color:#FAD733 ">Rated {{ review.rating }} of 5 by  </h3>
                         <h4 id="idComment">{{ review.comment }}</h4>
                     </div>
